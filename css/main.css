@@ -1,0 +1,108 @@
+@layer reset, init, layout, design;
+
+@import url(normalize.css) layer(reset);
+@import url(typography.css) layer(init);
+@import url(media-mobile.css) layer(layout);
+@import url(media-tablet.css) layer(layout) screen and (min-width: 960px);
+
+@layer reset {
+    :root {
+        color-scheme: light;
+
+        --primary: #2C57DE;
+        --secondary: #E1E8FF;
+        --background: #f5f8ff;
+        --gray: #929292;
+        --light: #FFFFFF;
+
+        --pagespeed: #ff653e;
+        --copywriting: #ebbc00;
+        --checklist: #007d11;
+    }
+}
+
+@layer init {
+    html {
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .img-responsive {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .page a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    p {
+        margin: 0;
+    }
+}
+
+@layer design {
+    .icon {
+        font-size: 0.9em;
+    }
+
+    .heading {
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .heading--h2 {
+        font-size: 2.5rem;
+    }
+
+    .article__header {
+        aspect-ratio: 21/9;
+    }
+
+    .article__image {
+        height: 100%;
+    }
+    
+    .article--full .article__header {
+        aspect-ratio: 21/6;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 1em 1.75em;
+        border: 1px solid var(--primary);
+        border-radius: 2em;
+        background-color: var(--primary);
+        font-weight: 600;
+        color: var(--light);
+        &:hover {
+            background-color: var(--light);
+            color: var(--primary);;
+        }
+    }
+
+    .article__title {
+        font-size: 1.2em;
+        line-height: 1.35;
+        font-weight: bold;
+        min-height: 2.7em;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .article__perex {
+        font-size: 1rem;
+        color: var(--gray);
+        line-height: 1.625em;
+        min-height: 3.25em;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

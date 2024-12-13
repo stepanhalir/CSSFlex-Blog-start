@@ -1,0 +1,54 @@
+/* CSS DOKUMENT K ÚPRAVĚ – mobil */
+.page {
+    background-color: var(--background);
+    padding: 1em;
+}
+
+.section {
+    max-width: 1280px;
+    margin-top: 2em;
+}
+
+.section__header {
+
+}
+
+.section__list {
+
+}
+
+/* article */
+
+.article {
+
+}
+
+.article--pagespeed {  
+
+}
+.article--copywriting {
+
+}
+.article--checklist {
+
+}
+
+.article__header {
+
+}
+
+.article__badge {
+
+}
+
+.article__badge::before {
+
+}
+
+.article__description {
+
+}
+
+.article__title:hover {
+
+}
