@@ -23,18 +23,8 @@
 
 }
 
-.article--pagespeed {  
-
-}
-.article--copywriting {
-
-}
-.article--checklist {
-
-}
-
 .article__header {
-
+    position: relative;
 }
 
 .article__badge {
